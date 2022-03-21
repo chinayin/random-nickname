@@ -1,0 +1,11 @@
+parameters:
+    level: 5
+    checkMissingIterableValueType: false
+    checkFunctionNameCase: true
+    reportUnmatchedIgnoredErrors: false
+    checkGenericClassInNonGenericObjectType: false
+    inferPrivatePropertyTypeFromConstructor: true
+    paths:
+        - src
+    excludePaths:
+        - src/Test/

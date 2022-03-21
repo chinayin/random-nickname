@@ -1,0 +1,26 @@
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+# Mac-specific directory that no other operating system needs.
+.DS_Store
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+*~
+bower_components
+# vs
+.vscode
+# Composer #
+/vendor
+composer.lock
+# PhpCsFixer #
+.php-cs-fixer.cache
+# Package Files #
+/runtime
+/tests/runtime
+nbproject
+.phpunit.result.cache
+
