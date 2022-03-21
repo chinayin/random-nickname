@@ -702,9 +702,7 @@ class RandomNickname
      */
     public static function generate(): ?string
     {
-        $r = rand(0, 3);
-        var_dump($r);
-        switch ($r) {
+        switch (rand(0, 3)) {
             case 0:
                 return strtr(
                     'adjective的noun',
@@ -719,4 +717,21 @@ class RandomNickname
         }
         return null;
     }
+
+    /**
+     * 批量生成随机昵称
+     * @param int $cnt
+     * @return array
+     */
+    public static function batchGenerate(int $cnt): array
+    {
+        $r = [];
+        while ($cnt > 0) {
+            $r[] = self::generate();
+            $cnt--;
+        }
+        return $r;
+    }
+
+
 }

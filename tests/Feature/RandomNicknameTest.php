@@ -18,4 +18,12 @@ final class RandomNicknameTest extends TestCase
         var_dump($nickname);
         $this->assertNotNull($nickname);
     }
+
+    public function testBatchGenerate()
+    {
+        $cnt = 10;
+        $list = RandomNickname::batchGenerate($cnt);
+        echo json_encode($list, JSON_UNESCAPED_UNICODE);
+        $this->assertCount($cnt, $list);
+    }
 }
