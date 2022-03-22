@@ -7,8 +7,7 @@ Random Nickname 自动生成昵称
 [![Total Downloads](https://img.shields.io/packagist/dt/chinayin/random-nickname.svg)](https://packagist.org/packages/chinayin/random-nickname)
 ![php 7.2+](https://img.shields.io/badge/php-min%207.2-red.svg)
 
-安装
-----
+### 安装
 
 运行环境要求 PHP 7.2 及以上版本。
 
@@ -16,8 +15,7 @@ Random Nickname 自动生成昵称
 composer require chinayin/random-nickname
 ```
 
-使用
-----
+### 使用
 
 ```php
 
@@ -29,8 +27,14 @@ RandomNickname::batchGenerate();
 
 ```
 
-结果样例
-----
+### 生成规则
+
+- `形容词`的`名词`
+- `名词`爱`名词2`
+- `名词`和`名词2`
+- `名词`与`名词2`
+
+样例：
 
 ```php
 ["秀发爱魔镜","金鱼爱胡萝卜","长情的翅膀","黑米爱草丛","秋天与猎豹","尊云与路灯","缥缈的摩托","沉默的蓝天","舞蹈和小蜜蜂","花卷与期待"]
